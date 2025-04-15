@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Card_comp from './Card_comp';
-import './Imp_topic.css';
+import './All_year_imp_topic.css';
 import 'remixicon/fonts/remixicon.css';
 import "../../style.css"
 import Nav from "../../Navbar/Nav"
