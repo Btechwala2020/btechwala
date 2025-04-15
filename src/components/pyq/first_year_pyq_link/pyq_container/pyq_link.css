@@ -1,0 +1,143 @@
+/* ... existing @font-face rules ... */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+#pdf > h1 {
+  font-family: font2;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 6vh;
+  text-align: center;
+  color: #01202b;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+li::marker {
+  font-size: 1.5rem;
+}
+
+#pdf > ul > li > a {
+  color: blue;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#a {
+  font-size: 1.7vw;
+  font-family: font1;
+
+  text-transform: uppercase;
+  color: grey;
+}
+
+#pdf a:hover {
+  color: blue;
+}
+
+ul {
+  margin-top: 15vh;
+  padding-left: 2rem;
+}
+
+#hr {
+  
+  margin: 2vw auto;
+  color: aliceblue;
+}
+
+@keyframes arrow {
+  0% {
+    background-color: white;
+    color: white;
+  }
+  100% {
+    background-color: blue;
+    color: blue;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  #pdf > h1 {
+    font-size: 5vh;
+  }
+
+  #a {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #pdf {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    
+  }
+
+  #pdf > h1 {
+    font-size: 7vw;
+    margin-top: 3vh;
+  }
+
+  #pdf > h1:nth-child(1) {
+    font-size: 8vw;
+  }
+
+  #pdf > ul > li {
+    position: relative;
+    list-style: none;
+    margin-top: 3vw;
+    padding: 0;
+  }
+
+  #a span {
+    display: none;
+  }
+
+  #hr {
+    width: 70vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+  }
+
+  #a {
+    padding: 0.5rem;
+    font-size: 4.5vw;
+  }
+
+  #pdf ul {
+    margin-top: 5vh;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #pdf > h1 {
+    font-size: 8vw;
+  }
+
+  #a {
+    font-size: 5vw;
+  }
+
+  #pdf ul {
+    margin-top: 8vh;
+  }
+}

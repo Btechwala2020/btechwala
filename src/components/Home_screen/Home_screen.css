@@ -1,0 +1,7 @@
+.home-screen {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(18, 18, 18, 0.95);
+    position: relative;
+    overflow: hidden;
+} 

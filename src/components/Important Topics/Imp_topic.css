@@ -1,0 +1,250 @@
+.wrapper {
+   
+    
+    position: relative;
+   bottom: 15vw;
+    overflow: hidden;
+}
+.wrapper i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    
+    right: 0;
+    border-radius: 50%;
+    padding: 50px;
+}
+
+
+#head{
+    line-height: 7vw;
+    padding: 2vw;
+    position: relative;
+    bottom: 20vw;
+    
+}
+
+#head h1 {
+    font-size: 7.5vw;
+    font-family: font2;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 9vw;
+    letter-spacing: -1px;
+   
+    
+    /* Gradient text color */
+    background: linear-gradient(45deg, #24CFA6, #4AFFD4);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 8s ease infinite;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw;
+    gap: 5vw;
+    justify-content: space-evenly;
+    
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.sm-card {
+    
+    width: 100vh;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background: linear-gradient(-45deg, #0c0c0c, #1a1a1a, #242424, #2d2d2d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.sm-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border: 1px solid #24CFA6;
+    box-shadow: 0 20px 40px rgba(36, 207, 166, 0.3);
+}
+
+.sm-card-image {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sm-card-image h1 {
+    font-size: 2.8vw;
+    font-family: font2, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #24CFA6, #4AFFD4, #24CFA6);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.5s ease;
+}
+
+.sm-card:hover .sm-card-image h1 {
+    transform: scale(1.1);
+}
+
+.sm-card-content {
+    padding: 25px;
+}
+
+.sm-card-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.sm-card-description {
+    font-size: 0.95rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.sm-card:hover .sm-card-description {
+    color: #24CFA6;
+}
+
+.sm-card-download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #24CFA6, #4AFFD4);
+    color: #0c0c0c;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(36, 207, 166, 0.3);
+}
+
+.sm-card-download-btn:hover {
+    background: linear-gradient(45deg, #4AFFD4, #24CFA6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(36, 207, 166, 0.4);
+}
+.study-material-page{
+    position: relative;
+    top: 20vw;
+}.study-material-page h3 {
+    font-size: 6vw;
+    font-family: font2, sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    bottom:   2vw;
+    
+    color: transparent;
+    background: linear-gradient(45deg, #24CFA6, #4AFFD4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(36, 207, 166, 0.3);
+    letter-spacing: 2px;
+   
+}
+
+.study-material-page h5 {
+    font-size: 2vw;
+    font-family: font2, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    color: #cccccc;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    position: relative;
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .sm-card-image h1 {
+        
+        font-size: 2rem;
+    }
+    
+    .wrapper {
+        margin-top: 35vw;
+        
+        
+     
+    }
+    .sm-card{
+        flex: 0 0 300px;
+       
+    }
+   
+    .carousel{
+        
+        
+     
+        
+        
+        width: 100% !important;
+       
+        
+    }
+    .wrapper{
+        padding: 8vw;
+        
+    }
+    .sm-card:hover {
+        transform: translateY(-10px) scale(1);
+        
+    }
+    
+
+    
+    .study-material-page h3 {
+         font-size: 12vw;
+         top: 15vw;
+            font-family: font1, sans-serif;
+         font-weight: 500;
+         }
+    .study-material-page h5 { 
+        font-size: 3vw;
+        top: 22vw;
+     }
+}

@@ -1,0 +1,228 @@
+#page5 {
+    height: 100vh;
+    width: 100%;
+    
+    padding: 8rem 2rem;
+    position: relative;
+    margin-top: 150px ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Improved Heading Styles */
+#page5 h1 {
+    font-size: 5vw;
+    font-family: font2;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+#page5 h1 span {
+    background: linear-gradient(90deg, #24CFA6, #4AFFD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+#page5 h3 {
+    font-size: 1.8vw;
+    font-family: font1;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* Enhanced Stats Container */
+#page5-mater {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    perspective: 1000px;
+}
+
+/* Improved Stats Cards */
+.stats-slide {
+    flex: 1;
+    max-width: 300px;
+    padding: 2.5rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(36, 207, 166, 0.2);
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stats-slide:hover {
+    transform: translateY(-15px) rotateX(10deg);
+    border-color: #24CFA6;
+    box-shadow: 0 20px 40px rgba(36, 207, 166, 0.2);
+    background: rgba(36, 207, 166, 0.05);
+}
+
+/* Enhanced Stats Numbers */
+.stats-slide h4 {
+    font-size: 3.5rem;
+    font-family: font1;
+    background: linear-gradient(90deg, #24CFA6, #4AFFD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Improved Stats Text */
+.stats-slide h5 {
+    font-size: 1.2rem;
+    font-family: font1;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.stats-slide i {
+    font-size: 1.6rem;
+    color: #24CFA6;
+    transition: all 0.3s ease;
+}
+
+.stats-slide:hover i {
+    transform: scale(1.2);
+    color: #4AFFD4;
+}
+
+
+#mobile-menu-btn {
+    display: none;
+}
+
+#page5-mater h4 {
+    font-size: 6vw;
+    font-family: font2;
+}
+
+#page5-mater h5 {
+    position: relative;
+    top: 1vw;
+    text-transform: capitalize;
+    font-size: 1.2vw;
+    color: white;
+    text-align: center;
+    font-family: font2;
+    font-weight: 500;
+}
+  
+@media screen and (max-width: 1024px) {
+    #page5 {
+        display: flex;
+        top: 18vw;
+        padding: 6rem 2rem;
+    }
+
+    #page5 h1 {
+        font-size: 3.2rem;
+    }
+
+    #page5 h3 {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+    }
+
+    #page5-mater {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .stats-slide {
+        flex: 0 1 calc(50% - 1rem);
+        max-width: none;
+    }
+
+    .stats-slide h4 {
+        font-size: 2.5rem;
+    }
+
+    .stats-slide h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #page5 {
+        padding: 4rem 1.5rem;
+    }
+
+    #page5 h1 {
+        font-size: 2.2rem;
+    }
+
+    #page5 h3 {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    #page5-mater {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-slide {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .stats-slide h4 {
+        font-size: 2.2rem;
+    }
+
+    .stats-slide h5 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #page5 h1 {
+        font-size: 1.8rem;
+    }
+
+    #page5 h3 {
+        font-size: 1rem;
+    }
+
+    .stats-slide {
+        max-width: 240px;
+        padding: 2rem 1.5rem;
+    }
+
+    .stats-slide h4 {
+        font-size: 2rem;
+    }
+
+    .stats-slide h5 {
+        font-size: 0.8rem;
+    }
+}
