@@ -1,5 +1,5 @@
 import React from 'react';
-import Card_comp from './Card_comp';
+import Card_comp from './card_comp';
 import './All_year_imp_topic.css';
 import 'remixicon/fonts/remixicon.css';
 import "../../style.css"
@@ -114,7 +114,7 @@ function Second_year_imp_topic() {
     ];
 
     return (
-        <>  <Nav/>
+        <>  
             <div className="study-material-page">
             <div id="head">
                     <h1>important topics for btech first year</h1>
@@ -136,7 +136,7 @@ function Second_year_imp_topic() {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            
         </>
     );
 }

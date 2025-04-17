@@ -298,8 +298,7 @@ function First_pyq() {
 
   return (
     <div>
-      <Nav />
-      <Back_anim />
+      
       <div id="title" class="title1">
         <h1 >Previous Year paper for <span>BTECH (2021-25 )</span></h1>
       </div>
@@ -316,7 +315,7 @@ function First_pyq() {
       <Pyq_container title="Data Analytics (BCS-052H)" data={daData} />
       <Pyq_container title="Data Compression (BCS-064H)" data={datacompData} />
       <Pyq_container title="Machine Learning Techniques (BCS-055H)" data={mlData} />
-      <Footer />
+      
       
 
 

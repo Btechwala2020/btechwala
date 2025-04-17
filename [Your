@@ -1,0 +1,16 @@
+<div class="sm-card-carousel-container">
+    <button class="carousel-button prev">&lt;</button>
+    <div class="sm-card-carousel">
+        <div class="sm-card">
+            <!-- Card content -->
+        </div>
+        <div class="sm-card">
+            <!-- Card content -->
+        </div>
+        <div class="sm-card">
+            <!-- Card content -->
+        </div>
+        <!-- Add more sm-card divs as needed -->
+    </div>
+    <button class="carousel-button next">&gt;</button>
+</div>

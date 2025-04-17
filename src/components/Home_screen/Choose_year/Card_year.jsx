@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import './Card_year.css'
+
 import oneIcon from '../../../assets/images/cardbox icon/one.png';
 import twoIcon from '../../../assets/images/cardbox icon/two.png';
 import threeIcon from '../../../assets/images/cardbox icon/three.png';
@@ -15,24 +16,25 @@ function Card_year() {
       icon: oneIcon,
       title: 'Btech',
       description: 'First year',
-      link: '/pyq/First-year'
+      link: '/Study_material/FirstYearStudyMaterialPage'
     },
     {
       icon: twoIcon,
       title: 'Btech',
       description: 'Second year',
-      link: '/pyq/Second-year'
+      link: '/Study_material/SecondYearStudyMaterialPage'
     },
     {
       icon: threeIcon,
       title: 'Btech',
       description: 'Third year',
-      link: '/pyq/Third-year'
+      link: '/Study_material/ThirdYearStudyMaterialPage'
     },
     {
       icon: fourIcon,
       title: 'Btech',
       description: 'Fourth year',
+      link: '/Study_material/FinalYearStudyMaterialPage'
     }
   ]
 

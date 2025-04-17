@@ -321,8 +321,8 @@ function First_pyq() {
   return (
     <div>
       
-      <Nav />
-      <Back_anim />
+      
+      
       
       <div id="title" class="title1">
         <h1 >Previous Year paper for BTECH <span>(2021-25 )</span></h1>
@@ -338,7 +338,7 @@ function First_pyq() {
       <Pyq_container title="SOFT SKILLS" data={softskillData} />
       <Pyq_container title="ENVIRONMENT AND ECOLOGY" data={enivironmentData} />
       
-      <Footer />
+      
 
 
 

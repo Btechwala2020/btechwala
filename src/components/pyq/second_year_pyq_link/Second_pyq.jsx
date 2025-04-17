@@ -329,8 +329,7 @@ function First_pyq() {
 
   return (
     <div>
-      <Nav />
-      <Back_anim />
+      
       <div id="title" class="title1">
         <h1 >Previous Year paper for <span>BTECH (2021-25 )</span></h1>
       </div>
@@ -347,7 +346,7 @@ function First_pyq() {
       <Pyq_container title="Operating Systems (KCS401H) " data={osData} />
       <Pyq_container title="Theory of Automata and Formal Languages" data={taflData} />
       
-      <Footer />
+      
 
 
 

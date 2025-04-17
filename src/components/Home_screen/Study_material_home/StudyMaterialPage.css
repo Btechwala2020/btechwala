@@ -1,12 +1,13 @@
-.wrapper {
+StudyMaterialPage.css
+.wrapperee {
     max-width: 1100px;
     width: 100%;
     position: relative;
-    margin: 0 auto;
-    margin-top:28vw;
+    
     overflow: hidden;
+    top: 1000px;
 }
-.wrapper i{
+.wrapperee i{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -17,17 +18,18 @@
     padding: 50px;
 }
 
-.carousel {
+.carouselee {
     display: flex;
     padding: 5vw;
-    gap: 80px;
+    gap: 90px;
+    margin-top: 7vw;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
-.carousel::-webkit-scrollbar {
+.carouselee::-webkit-scrollbar {
     display: none;
 }
 
@@ -37,7 +39,7 @@
     100% { background-position: 0% 50%; }
 }
 
-.sm-carde {
+.sm-cardee {
     
     width: 100vh;
     flex: 0 0 300px;
@@ -51,13 +53,13 @@
     transition: all 0.3s ease;
 }
 
-.sm-carde:hover {
+.sm-cardee:hover {
     transform: translateY(-10px) scale(1.02);
     border: 1px solid #24CFA6;
     box-shadow: 0 20px 40px rgba(36, 207, 166, 0.3);
 }
 
-.sm-card-imagee {
+.sm-card-imageee {
     height: 170px;
     width: 100%;
     display: flex;
@@ -65,7 +67,7 @@
     justify-content: center;
 }
 
-.sm-card-image h1 {
+.sm-card-imageee h1 {
     font-size: 2.8vw;
     font-family: font2, sans-serif;
     text-align: center;
@@ -79,15 +81,15 @@
     transition: transform 0.5s ease;
 }
 
-.sm-card:hover .sm-card-image h1 {
+.sm-cardee:hover .sm-card-imageee h1 {
     transform: scale(1.1);
 }
 
-.sm-card-content {
+.sm-card-contentee {
     padding: 25px;
 }
 
-.sm-card-title {
+.sm-card-titleee {
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 15px;
@@ -95,7 +97,7 @@
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-.sm-card-description {
+.sm-card-descriptionee {
     font-size: 0.95rem;
     color: #cccccc;
     margin-bottom: 20px;
@@ -103,11 +105,11 @@
     font-weight: 400;
 }
 
-.sm-card:hover .sm-card-description {
+.sm-cardee:hover .sm-card-descriptionee {
     color: #24CFA6;
 }
 
-.sm-card-download-btn {
+.sm-card-download-btnee {
     display: inline-flex;
     align-items: center;
     padding: 10px 20px;
@@ -121,23 +123,23 @@
     box-shadow: 0 4px 15px rgba(36, 207, 166, 0.3);
 }
 
-.sm-card-download-btn:hover {
+.sm-card-download-btnee:hover {
     background: linear-gradient(45deg, #4AFFD4, #24CFA6);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(36, 207, 166, 0.4);
 }
-.study-material-page{
+.study-material-pageee{
     position: relative;
-    top: 20vw;
-}
-.study-material-pagee h3 {
-    font-size: 8vw;
+    padding: 7vw;
+    top: 15vw;
+}.study-material-pageee h3 {
+    font-size: 7vw;
     font-family: font2, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     position: relative;
-    top: 4vw;
+    bottom:   2vw;
     
     color: transparent;
     background: linear-gradient(45deg, #24CFA6, #4AFFD4);
@@ -148,13 +150,12 @@
    
 }
 
-.study-material-pagee h5 {
-    font-size: 2.5vw;
+.study-material-pageee h5 {
+    font-size: 2vw;
     font-family: font2, sans-serif;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
-    top: 5vw;
     color: #cccccc;
     letter-spacing: 1px;
     line-height: 1.4;

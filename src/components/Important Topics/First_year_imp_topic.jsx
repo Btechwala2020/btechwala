@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Card_comp from './Card_comp';
+import Card_comp from './card_comp';
 import './All_year_imp_topic.css';
 import 'remixicon/fonts/remixicon.css';
 import "../../style.css"
@@ -88,7 +88,7 @@ function First_year_imp_topic() {
 
     return (
         <>
-            <Nav />
+           
             <div className="study-material-page">
                 <div id="head">
                     <h1>important topics for btech first year</h1>
@@ -111,7 +111,7 @@ function First_year_imp_topic() {
                     <i className="fa-solid fa-angle-right" onClick={() => carouselRef.current.scrollLeft += carouselRef.current.offsetWidth}></i>
                 </div>
             </div>
-            <Footer/>
+           
 
 
 
