@@ -25,32 +25,49 @@ const Nav = () => {
 
         <div id="mid">
           <div id="animid1">
-            <h2>home</h2>
+            <Link to="/home" className="nav-link">
+              <h2>home</h2>
+            </Link>
           </div>
           <div id="animid1">
-            <h2>study material</h2>
+            <Link to="/studymaterial" className="nav-link">
+              <h2>study material</h2>
+            </Link>
           </div>
           <div id="animid">
             <h2>
               <li id="syla" onClick={toggleDropdown}>
                 syllabus <i className="ri-arrow-down-double-line"></i>
                 <ul className={`dropdown ${isDropdownOpen ? 'active' : ''}`}>
-                  <li id="one">first year</li>
+                  <a href="https://drive.google.com/file/d/1BnA9G05Wm6J1VMPFy6NX0T13RZfTNbVv/view?usp=drive_link">
+                    <li id="one">first year</li>
+                  </a>
                   <div id="line"></div>
-                  <li id="one">second year</li>
+                  <a href="https://drive.google.com/file/d/1_YDwgyweXD7za8X-8ZyZ_6nQX4A4EUSz/view?usp=drive_link">
+                    <li id="one">second year</li>
+                  </a>
                   <div id="line"></div>
-                  <li id="one">third year</li>
+                  <a href="https://drive.google.com/file/d/1vGU6VDl-r7k_Bsoi6yE9eVU0HyL0lB0x/view?usp=drive_link">
+                    <li id="one">third year</li>
+                  </a>
                   <div id="line"></div>
-                  <li id="one">fourth year</li>
+                  <a href="https://drive.google.com/file/d/1fHGTtAdhUkLAHOk-TKfYh_lQDYVlM-U0/view?usp=drive_link">
+                    <li id="one">fourth year</li>
+                  </a>
                 </ul>
               </li>
             </h2>
           </div>
           <div id="animid1">
-            <h2>notes</h2>
+            <Link to="/quantum" className="nav-link">
+              <h2>quantum</h2>
+            </Link>
           </div>
           <div id="animid1">
-            <h2>pyq's</h2>
+            <Link to="/pyq" className="nav-link">
+              <h2>pyq</h2>
+
+            </Link>
           </div>
         </div>
         <div id="navbar-line"></div>
@@ -75,22 +92,22 @@ const Nav = () => {
         </div>
         <div id="mobile-menu-items">
           {[
-            { href: "https://www.btechwala.in", text: "Home" },
-            { href: "https://www.btechwala.in/studymaterial_year_selection.html", text: "Study Material" },
-            { href: "https://www.btechwala.in/notes_year_selection.html", text: "Notes" },
-            { href: "https://www.btechwala.in/quantum_year_selection.html", text: "Quantum" },
-            { href: "https://www.btechwala.in/pyq_year_selection.html", text: "PYQ's" },
-            { href: "https://www.btechwala.in/imp_year_selection.html", text: "Important Topics" },
-            { href: "", text: "Best YouTube Channels" }
+            { text: "Home" },
+            { href: "/studymaterial", text: "Study Material" },
+           
+            { href: "/quantum", text: "Quantum" },
+            { href: "/pyq", text: "PYQ's" },
+            { href: "/important_topic", text: "Important Topics" },
+            
           ].map((item, index) => (
-            <a
-              href={item.href}
+            <Link
+              to={item.href}
               key={index}
               style={{ animation: `fadeInRight 0.5s ease forwards ${index * 0.1}s` }}
             >
               <i className="ri-arrow-right-up-line"></i>
               {item.text}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

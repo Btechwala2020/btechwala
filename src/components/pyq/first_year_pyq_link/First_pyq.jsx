@@ -1,12 +1,15 @@
 import React from 'react'
 import Pyq_container from './pyq_container/Pyq_container'
-import Nav from '../../../Navbar/Nav'
-import Footer from '../../../Footer/Footer'
-import Back_anim from '../../../Back_Animation/Back_anim'
 
+import { useEffect, useRef } from 'react';
 import './first_pyq.css' // Add this if you have CSS for styling
 
 function First_pyq() {
+  const carouselRef = useRef(null);
+  
+      useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
   const physicsData = [
     {
       link: "https://drive.google.com/file/d/19g0iG52veJEdBNvFEBV08UBBfwnQf37t/view?usp=drive_link",

@@ -58,16 +58,16 @@ function ThirdYearStudyMaterialPage() {
         },
         {
             title: "Important Questions",
-            description: "Complete syllabus for first year B.Tech students",
+            description: "Complete syllabus for Third year B.Tech students",
             imageUrl: "Important Questions",
             downloadUrl: "/ImportantTopic/Thirdyear",
             fileType: "PDF"
         },
         {
-            title: "Handwritten Notes",
-            description: "Last 5 years question papers for all subjects",
-            imageUrl: "Handwritten Notes",
-            downloadUrl: "/downloads/pyq-bundle.zip",
+            title: "Latest Quantum",
+            description: "Latest Quantum  for First Year B.Tech students",
+            imageUrl: "Latest Quantum",
+            downloadUrl: "/ThirdYearQuantum",
             fileType: "ZIP"
         },
         {
@@ -92,7 +92,7 @@ function ThirdYearStudyMaterialPage() {
             <div className="study-material-pagee">
                 <h3>Services</h3>
                 <h5>Experience the difference with the premium services we provide</h5>
-                <div className="wrapper">
+                <div className="wrappereee">
                     <i className="fa-solid fa-angle-left" onClick={() => carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth}></i>
                     <div className="carousel" ref={carouselRef}>
                         {studyMaterials.map((material, index) => (

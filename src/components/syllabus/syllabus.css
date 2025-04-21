@@ -1,7 +1,8 @@
-.wrapperimp {
+.wrappersyllabus {
     position: relative;
-   
-   margin-bottom: 35vw;
+    bottom: 10vw;
+    
+    
     overflow: hidden;
 }
 
@@ -46,10 +47,12 @@
 
 .carousel {
     display: flex;
+   
     flex-wrap: wrap;
-    padding: 2vw;
-    gap: 5vw;
-    justify-content: space-evenly;
+    
+    
+    gap: 5.5vw;
+    
 }
 
 .carousel::-webkit-scrollbar {
@@ -153,7 +156,7 @@
 
 .study-material-page {
     position: relative;
-    top: 20vw;
+    
 }
 
 .study-material-page h3 {

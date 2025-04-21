@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Footer.css'
 
@@ -22,28 +23,30 @@ function Footer() {
               <a href="https://drive.google.com/file/d/1fHGTtAdhUkLAHOk-TKfYh_lQDYVlM-U0/view?usp=drive_link">Fourth year</a>
             </div>
             <div id="footer-part-2-part1">
-              <h1>Handwritten notes</h1>
-              <a href="https://www.btechwala.in/notes_first_year.html">First Year</a>
-              <a href="https://www.btechwala.in/notes_second_year.html">Second year</a>
-              <a href="https://www.btechwala.in/faq.html">Third year</a>
-              <a href="https://www.btechwala.in/privacy_policy.html">Fourth year</a>
+              <h1>Quantum</h1>
+              <Link to={"/FirstYearQuantum"}>First Year</Link>
+              <Link to={"/SecondYearQuantum"}>Second year</Link>
+              <Link to={"/ThirdYearQuantum"}>Third year</Link>
+              <Link to={"/FourthYearQuantum"}>Fourth year</Link>
+              
             </div>
           </div>
 
           <div id="footer-part-2">
             <div id="footer-part-2-part1">
               <h1>Previous year paper</h1>
-              <a href="https://www.btechwala.in/first_year_pyq_link.html">First Year</a>
-              <a href="https://www.btechwala.in/second_year_pyq_link.html">Second year</a>
-              <a href="https://www.btechwala.in/faq.html">Third year</a>
-              <a href="https://www.btechwala.in/privacy_policy.html">Fourth year</a>
+              <Link to={"/pyq/First-year"}>First Year</Link>
+              <Link to={"/pyq/Second-year"}>Second year</Link>
+              <Link to={"/pyq/Third-year"}>Third year</Link>
+              <Link to={"/pyq/Fourth-year"}>Fourth year</Link>
             </div>
             <div id="footer-part-2-part1">
               <h1>Important Topics</h1>
-              <a href="https://www.btechwala.in/imp_first_year.html">First Year</a>
-              <a href="https://www.btechwala.in/imp_second_year.html">Second year</a>
-              <a href="https://www.btechwala.in/faq.html">Third year</a>
-              <a href="https://www.btechwala.in/privacy_policy.html">Fourth year</a>
+              <Link to={"/ImportantTopic/Firstyear"}>First Year</Link>
+              <Link to={"/ImportantTopic/Secondyear"}>Second year</Link>
+              <Link to={"/ImportantTopic/Thirdyear"}>Third year</Link>
+              <Link to={"/ImportantTopic/Fourthyear"}>Fourth year</Link>
+              
             </div>
           </div>
         </div>
